@@ -1,0 +1,2463 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+		<link rel="stylesheet" href="/styles/header.css" />
+		<link rel="stylesheet" href="/styles/profileSection.css" />
+		<link rel="stylesheet" href="/styles/style.css" />
+		<link href="head.css" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- /----------------------menuphone---------->
+
+	<!-- 	<div class="dropMenu">
+			<ul>
+				<li><a href="##">Catalog » </a></li>
+				<li><a href="##">Products » </a></li>
+				<li><a href="##">Career paths » </a></li>
+				<li><a href="##">Resources » </a></li>
+				<li><a href="##">For Business » </a></li>
+				<div class="mob1">
+					<a href="{% url 'update' user.profile.slug %}"
+						><button class="btn" id="logout">Edit</button></a
+					>
+					<a href="{% url 'logout' %}"
+						><button class="btn" id="logout">LogOut</button></a
+					>
+					<a href="{% url 'login' %}"
+						><button class="btn" id="login">LogIn</button></a
+					>
+				</div>
+				<a href="{% url 'register' %}"
+					><button class="btn1" id="btn1">Register</button></a
+				>
+			</ul>
+			<div class="Close">X</div>
+		</div>
+		<div class="Main_header">
+			<div class="sub_header">
+				<div class="logoheadericon">
+					<div class="mobile_profile-icon" onclick="displaySideMenu()">
+						<img src="/assets//profile.png" alt="😎" />
+					</div>
+					<img src="main/logo.png" alt="logo" />
+				</div>
+
+				<div class="menu_item">
+					<ul>
+						<li onclick="catalog()">
+							<a href="##" class="nav_item">Catalog </a>
+							<span class="nav_item">⌵</span>
+						</li>
+						<li onclick="products()">
+							<a href="##" class="nav_item">Products </a>
+							<span class="nav_item">⌵</span>
+						</li>
+						<li onclick="careerPath()">
+							<a href="##" class="nav_item">Career paths </a>
+						</li>
+						<li onclick="resources()">
+							<a href="##" class="nav_item">Resources </a>
+							<span class="nav_item">⌵</span>
+						</li>
+						<li onclick="business()">
+							<a href="##" class="nav_item">For Business </a>
+							<span class="nav_item">⌵</span>
+						</li>
+					</ul>
+					<div class="buttons">
+						<a href="{% url 'login' %}"><button id="login">LogIn</button></a>
+						<a href="{% url 'register' %}"
+							><button id="register">Register</button></a
+						>
+					</div>
+					<div class="avatar">
+						<img
+							src="https://www.participate.nyc.gov/assets/decidim/default-avatar-43686fd5db4beed0141662a012321bbccd154ee1d9188b0d1f41e37b710af3cb.svg"
+							alt=""
+							srcset=""
+						/>
+					</div>
+					<div class="profile_dropDown">
+						<a
+							href="{% url 'dashboard' user.profile.slug %}"
+							class="profile_dropDown_item"
+						>
+							<span
+								><img
+									src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/000000/external-dashboard-blogger-vitaliy-gorbachev-lineal-vitaly-gorbachev.png"
+							/></span>
+							<p>View Dashboard</p>
+						</a>
+						<a
+							href="{% url 'show_profile' user.profile.slug %}"
+							class="profile_dropDown_item"
+						>
+							<span
+								><img src="https://img.icons8.com/ios/50/000000/user.png"
+							/></span>
+							<p>View Profile</p>
+						</a>
+						<a
+							href="{% url 'update' user.profile.slug %}"
+							class="profile_dropDown_item"
+						>
+							<span
+								><img
+									src="https://img.icons8.com/ios/50/000000/user-not-found.png"
+							/></span>
+							<p>Edit</p>
+						</a>
+						<a href="{% url 'logout' %}" class="profile_dropDown_item">
+							<span
+								><img src="https://img.icons8.com/windows/32/000000/exit.png"
+							/></span>
+							<p>Logout</p>
+						</a>
+					</div>
+				</div>
+				<div class="ham">
+					<img src="main/menu.png" alt="menu" />
+				</div>
+			</div>
+		</div> -->
+		<!--  -->
+<div class="Main_header">
+		<div class="nav-bar-desktop">
+                <div class="desk-nav-frame">
+                    <img src="assets/logo.png"  alt="TechSnap Logo" srcset="" height="60px"></img>
+                    <div class="desk-dropdowns">
+                        <li class="1-dropdown">
+                            <p class="catalog-desk">Catalog ⌵</p>
+                            <div class="catalog-dropdown-desk">
+                                <div class="dropdown-main-1-card">
+                                    <div class="dropdown-main-1-main-card">
+                                        <b>Course Catalog</b><br>
+                                        <p style="margin-top: 10px;">
+                                        Career options for students after completing engineering in Computer Science
+                                        </p>
+                                    </div>
+                                    <div class="dropdown-main-1-sub-card">
+                                        <b>Developer Careers</b><br>
+                                        <ul>
+                                            <li>Frontend Developer</li>
+                                            <li>Backend Developer</li>
+                                            <li>Software Developer</li>
+                                            <li>Game Developer</li>
+                                            <li>Mobile Application Dev</li>
+                                            <li>view all >></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-main-1-sub-card">
+                                        <b>Data Careers</b><br>
+                                        <ul>
+                                            <li>Data Analyst</li>
+                                            <li>Data Engineer</li>
+                                            <li>Data Scientist</li>
+                                            <li>Data Architect</li>
+                                            <li>ML Engineer</li>
+                                            <li><a>view all >><a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-main-1-sub-card">
+                                        <b>Cloud Careers</b><br>
+                                        <ul>
+                                            <li>Cloud Architect</li>
+                                            <li>DevOps Engineer</li>
+                                            <li>Cloud Security Analyst</li>
+                                            <li>Cloud Engineer</li>
+                                            <li>IOT Developer</li>
+                                            <li><a>view all >><a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-main-1-sub-card">
+                                        <b>Other Careers</b><br>
+                                        <ul>
+                                            <li>UI/UX Designer</li>
+                                            <li>IT Consultant</li>
+                                            <li>SEO Manager</li>
+                                            <li>Social Media Manager</li>
+                                            <li>Technical Writer</li>
+                                            <li><a>view all >><a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="dropdown-main-1-card">
+                                    <div class="dropdown-main-1-main-card">
+                                        <b>Career Catalog</b><br>
+                                        <p style="margin-top: 10px;">
+                                            Career options for students after completing engineering in Computer Science
+                                        </p>
+                                    </div>
+                                    <div class="dropdown-main-1-sub-card">
+                                        <b>Tutorials</b><br>
+                                        <ul>
+                                            <li>Python</li>
+                                            <li>C++</li>
+                                            <li>HTML</li>
+                                            <li>SQL</li>
+                                            <li><a>view all courses</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-main-1-sub-card">
+                                        <b>Live Mentorship</b><br>
+                                        <ul>
+                                            <li>Basics of Data Science</li>
+                                            <li>Basics of python</li>
+                                            <li>Basics of machine learning</li>
+                                            <li>Basics of MySQL</li>
+                                            <li><a>view all courses</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-main-1-sub-card">
+                                        <b>Live Mentorship</b><br>
+                                        <ul>
+                                            <li>Basics of HTML, CSS</li>
+                                            <li>Basics of GitHub</li>
+                                            <li>Basics of Deployment</li>
+                                            <li>Basics of Django</li>
+                                            <li><a>view all courses</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="dropdown-main-1-card">
+                                    <div class="dropdown-main-1-main-card">
+                                        <b>Project Catalog</b><br>
+                                        <p style="margin-top: 10px;">
+                                            Career options for students after completing engineering in Computer Science
+                                        </p>
+                                    </div>
+                                    <div class="dropdown-main-1-sub-card">
+                                        <b>Web Development</b><br>
+                                        <ul>
+                                            <li>Building clones</li>
+                                            <li>Portfolio projects</li>
+                                            <li>Real World Application</li>
+                                            <li><a>view all courses</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-main-1-sub-card">
+                                        <b>Data Science</b><br>
+                                        <ul>
+                                            <li>Data Analysis</li>
+                                            <li>Data Cleaning</li>
+                                            <li>Data Mining</li>
+                                            <li><a>view all courses</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-main-1-sub-card">
+                                        <b>Machine Learning</b><br>
+                                        <ul>
+                                            <li>Regression Projects</li>
+                                            <li>Classification of projects</li>
+                                            <li>OpenCV Projects</li>
+                                            <li><a>view all courses</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li  class="2-dropdown">
+                            <p class="community-desk">Community ⌵</p>
+                            <div class="community-dropdown-desk desk-dropdown">
+                                <ul>
+                                    <li>About</li>
+                                    <li>Forum</li>
+                                    <li>Our People</li>
+                                    <li>Contact</li>
+                                    <li>Learner Stories</li>
+                                    <li>Fellowship</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="carrer-desk">
+                            Career Paths
+                        </li>
+                        <li class="3-dropdown">
+                            <p class="resource-desk">Resources ⌵</p>
+                            <div class="resource-dropdown-desk desk-dropdown">
+                                <ul>
+                                    <li>Cheat Sheets</li>
+                                    <li>Blogs</li>
+                                    <li>Mock Interview</li>
+                                    <li>Events</li>
+                                    <li>Webinars</li>
+                                    <li>Challenges</li>
+                                    <li>Projects</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li  class="4-dropdown">
+                            <p class="pricing-desk">Pricing ⌵</p>
+                            <div class="pricing-dropdown-desk desk-dropdown">
+                                <ul>
+                                    <li>For Individuals</li>
+                                    <li>For Students</li>
+                                    <li>For University</li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Logout View
+                        <span>
+                            <button class="login">Login</button>
+                            <button class="register">Register</button>
+                        </span>
+                        -->
+                        <span  class="5-dropdown">
+                            <img src="https://avatars.githubusercontent.com/u/39455174?v=4" height="40px" width="40px" class="profile-avatar" style="margin-top: 8px; border-radius: 100%; object-fit: contain;"></img>
+                            <div class="profile-dropdown-desk desk-dropdown ">
+                                <ul>
+
+                                    <span style="display: flex; padding-top: 10px; padding-left:15px; padding-right:15px; padding-bottom: 15px;" class="profile-hover">
+                                        <img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/000000/external-dashboard-blogger-vitaliy-gorbachev-lineal-vitaly-gorbachev.png" height="30px" />
+                                        <li style="line-height: 8px;">View Dashboard</li>
+                                    </span>
+                                    <span style="display: flex; padding-top: 10px; padding-left:15px; padding-right:15px; padding-bottom: 15px;" class="profile-hover">
+                                        <img src="https://img.icons8.com/ios/50/000000/user.png" height="30px" />
+                                        <li style="line-height: 8px;">View Profile</li>
+                                    </span>
+                                    <span style="display: flex; padding-top: 10px; padding-left:15px; padding-right:15px; padding-bottom: 15px;" class="profile-hover">
+                                        <img src="https://img.icons8.com/ios/50/000000/user-not-found.png" height="30px" />
+                                        <li style="line-height: 8px;">Edit</li>
+                                    </span>
+                                    <span style="display: flex; padding-top: 10px; padding-left:15px; padding-right:15px; padding-bottom: 15px;" class="profile-hover">
+                                        <img src="https://img.icons8.com/windows/32/000000/exit.png" height="30px" />
+                                        <li style="line-height: 8px;">Logout</li>
+                                    </span>
+                                </ul>
+                            </div>
+                        </span>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Navigation Bar -->
+            <div class="mob-nav">
+                <div class="mob-nav-frame">
+                    <div class="mob-nav-frame-left">
+                        <img src="assets/logo.png" alt="TechSnap Logo" srcset="" height="60px">
+                    </div>
+                    <div class="mob-nav-frame-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" onclick="showMobMainNavigationMenu()" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Pagination for Navigation Menu -->
+            <div class="nav-mainPage">
+                <div class="mob-nav-blocks">
+                    <div></div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" onclick="hideMobNavigationMenu()" fill="currentColor" class="bi bi-x-lg"viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                            <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks" style="justify-content: center;">
+                    <div class="block-names">
+                        <img src="https://avatars.githubusercontent.com/u/39455174?v=4" height="100px" width="100px" style="margin-top: 8px; border-radius: 100%; object-fit: contain;"><img>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks" style="justify-content: center;">
+                    <div class="block-names">
+                        <button style="padding: 10px; border: 3px solid #005EFF ; font-family: 'Montserrat', sans-serif; color: #005EFF; border-radius: 10px; background: #FFF; font-weight: 700; padding-left: 25px; padding-right: 25px;">View Dashboard</button>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks" onclick="showMobCatNavigationMenu()">
+                    <div class="block-names">
+                        Catalog
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks" onclick="showMobCommNavigationMenu()">
+                    <div class="block-names">
+                        Community
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        Career Paths
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks" onclick="showMobResNavigationMenu()">
+                    <div class="block-names">
+                        Resources
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks" onclick="showMobPriNavigationMenu()">
+                    <div class="block-names">
+                        Pricing
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        <a href="">Already an user? Login</a>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        <a href="">Don't have account? Register</a>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks" onclick="showMobCatNavigationMenu()">
+                    <div class="block-names">
+                        <a href="" style="text-decoration: none; color: #FF3232;">Logout</a>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+
+
+                <div class="nav-footer">
+                    <div class="nav-footer-row-1">
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms & Condition</a></li>
+                            <li><a href="">Cookies</a></li>
+                        </ul>
+                    </div>
+                    Made with ❤️ in india @2021 Techsnap Education LLP
+                </div>
+            </div>
+
+            <!-- Catalog -->
+            <div class="nav-catalogPage">
+                <div class="mob-nav-blocks">
+                    <div>
+                        <svg style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" width="25" height="25" onclick="showMobMainNavigationMenu()" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                    <div class="block-title">
+                        <b>Catalog</b>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" onclick="hideMobNavigationMenu()" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                            <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-page-top">
+                    <!-- Career Paths -->
+                    <div class="mob-nav-blocks" style="background-color: #EFEFEF; height: 40px;">
+                        <div class="block-names">
+                            <b>Career Paths</b>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+
+                    <p class="collapsible">
+                        Developer Careers
+                        <svg style="transform: rotate(90deg);" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </p>
+                    <div class="content">
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Frontend Developer
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Backend Developer
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Software Developer
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Game Developer
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Mobile Application Dev
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="collapsible">
+                        Data Careers
+                        <svg style="transform: rotate(90deg);" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </p>
+                    <div class="content">
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Data Analyst
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Data Engineer
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Data Scientist
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Data Architect
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                ML Engineer
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="collapsible">
+                        Cloud Careers
+                        <svg style="transform: rotate(90deg);" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </p>
+                    <div class="content">
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Cloud Architect
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                DevOps Engineer
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Cloud Security Analyst
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Cloud Engineer
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                IOT Developer
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p class="collapsible">
+                        Other Careers
+                        <svg style="transform: rotate(90deg);" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </p>
+                    <div class="content">
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                UI/UX Designer
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                IT Consultant
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                SEO Manager
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Social Media Manager
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Technical Writer
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mob-nav-blocks">
+                        <div class="block-names">
+                            See All
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!--  Courses -->
+                    <div class="mob-nav-blocks" style="background-color: #EFEFEF; height: 40px; ">
+                        <div class="block-names">
+                            <b>Courses</b>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                    <p class="collapsible">
+                        Tutorials
+                        <svg style="transform: rotate(90deg);" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+
+                    </p>
+                    <div class="content">
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Python
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                C++
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                HTML
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                SQL
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <p class="collapsible">
+                        Live Mentorship
+                        <svg style="transform: rotate(90deg);" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+
+                    </p>
+                    <div class="content">
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Basics of Data Science
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Basics of Python
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Basics of Machine Learning
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Basics of MySQl
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Basics of HTML, CSS
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Basics of Github
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Basics of Deployment
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mob-nav-sub-blocks">
+                            <div class="block-names">
+                                Basics of Django
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mob-nav-blocks">
+                        <div class="block-names">
+                            See All
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <!--  Projects -->
+                    <div class="mob-nav-blocks" style="background-color: #EFEFEF; height: 40px;">
+                        <div class="block-names">
+                            <b>Projects</b>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                    <p class="mob-nav-blocks">
+                        Free Projects
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+
+                    </p>
+
+                    <p class="mob-nav-blocks">
+                        Mini Projects
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+
+                    </p>
+                </div>
+
+
+                <div class="nav-footer">
+                    <div class="nav-footer-row-1">
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms & Condition</a></li>
+                            <li><a href="">Cookies</a></li>
+                        </ul>
+                    </div>
+                    Made with ❤️ in india @2021 Techsnap Education LLP
+                </div>
+            </div>
+
+            <!-- Pagination for Navigation Menu -->
+            <!-- Community-->
+
+            <div class="nav-commPage">
+                <div class="mob-nav-blocks">
+                    <div>
+                        <svg style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" width="25" height="25" onclick="showMobMainNavigationMenu()" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                    <div class="block-title">
+                        <b>Community</b>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" onclick="hideMobNavigationMenu()" width="25" height="25" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                            <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        About
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        Forum
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        Our People
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        Contact Us
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        Learner Stories
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        Fellowship
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="nav-footer">
+                    <div class="nav-footer-row-1">
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms & Condition</a></li>
+                            <li><a href="">Cookies</a></li>
+                        </ul>
+                    </div>
+                    Made with ❤️ in india @2021 Techsnap Education LLP
+                </div>
+            </div>
+
+
+            <!-- Resources -->
+
+            <div class="nav-resPage">
+                <div class="mob-nav-blocks">
+                    <div>
+                        <svg style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" width="25" height="25" onclick="showMobMainNavigationMenu()" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                    <div class="block-title">
+                        <b>Resources</b>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" onclick="hideMobNavigationMenu()" width="25" height="25" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                            <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        Cheat Sheets
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        Blogs
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        Mock Interviews
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        Events
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        Webinars
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        Challenges
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        Projects
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="nav-footer">
+                    <div class="nav-footer-row-1">
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms & Condition</a></li>
+                            <li><a href="">Cookies</a></li>
+                        </ul>
+                    </div>
+                    Made with ❤️ in india @2021 Techsnap Education LLP
+                </div>
+            </div>
+
+            <!-- Pricing -->
+
+            <div class="nav-priPage">
+                <div class="mob-nav-blocks">
+                    <div>
+                        <svg style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" width="25" height="25" onclick="showMobMainNavigationMenu()" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                    <div class="block-title">
+                        <b>Pricing</b>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" onclick="hideMobNavigationMenu()" width="25" height="25" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                            <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        For Individuals
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mob-nav-blocks">
+                    <div class="block-names">
+                        For Students
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="nav-footer">
+                    <div class="nav-footer-row-1">
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms & Condition</a></li>
+                            <li><a href="">Cookies</a></li>
+                        </ul>
+                    </div>
+                    Made with ❤️ in india @2021 Techsnap Education LLP
+                </div>
+            </div>
+			            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                            content.style.display = "none";
+                        } else {
+                            content.style.display = "block";
+                        }
+                    });
+                }
+                </script>
+                <script>
+                    var dp1 = $(".catalog-dropdown-desk");
+                    var dp2 = $(".community-dropdown-desk");
+                    var dp3 = $(".resource-dropdown-desk");
+                    var dp4 = $(".pricing-dropdown-desk");
+                    var dp5 = $(".profile-dropdown-desk");
+
+                    dp1.hide();
+                    dp2.hide();
+                    dp3.hide();
+                    dp4.hide();
+                    dp5.hide();
+                </script>
+                <script>
+                    var dp1 = $(".catalog-dropdown-desk");
+                    var dp2 = $(".community-dropdown-desk");
+                    var dp3 = $(".resource-dropdown-desk");
+                    var dp4 = $(".pricing-dropdown-desk");
+                    var dp5 = $(".profile-dropdown-desk");
+
+                    var DP1 = $(".1-dropdown");
+                    var DP2 = $(".2-dropdown");
+                    var DP3 = $(".3-dropdown");
+                    var DP4 = $(".4-dropdown");
+                    var DP5 = $(".5-dropdown");
+
+                    $(".catalog-desk").click(function(){
+                        dp1.toggle();
+                    });
+                    $(".community-desk").click(function(){
+                        dp2.toggle();
+                    });
+                    $(".resource-desk").click(function(){
+                        dp3.toggle();
+                    });
+                    $(".pricing-desk").click(function(){
+                        console.log(dp4.is(":hidden"));
+                        dp4.toggle();
+                    });
+                    $(".profile-avatar").click(function(){
+                        dp5.toggle();
+                    });
+
+                    $(document).mouseup(function(e){
+                        if(!DP1.is(e.target) && DP1.has(e.target).length === 0){
+                            dp1.hide();
+                        }
+                        if(!DP2.is(e.target) && DP2.has(e.target).length === 0){
+                            dp2.hide();
+                        }
+                        if(!DP3.is(e.target) && DP3.has(e.target).length === 0){
+                            dp3.hide();
+                        }
+                        if(!DP4.is(e.target) && DP4.has(e.target).length === 0){
+                            dp4.hide();
+                        }
+                        if(!DP5.is(e.target) && DP5.has(e.target).length === 0){
+                            dp5.hide();
+                        }
+                    });
+                </script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  
+		</div>
+		<!--  -->
+		<div class="profile_container">
+			
+			<div class="profile_section">
+				<div class="profile_details">
+					<div class="details_header" style="display:flex">
+						<img src="/assets/profile.jpg" alt="profile" />
+						<span class="close_x">x</span>
+					</div>
+					<div class="details_body">
+						<div class="name">Mitrababd chowdary</div>
+						<div class="tag">@mithranand333</div>
+						<div class="place">india,Vishakapatnam</div>
+						<div class="connect_box">
+							<div class="connect_item">
+								<img src="/assets/facebook.svg" alt="connect" />
+								<p>@mitran3333</p>
+							</div>
+							<div class="connect_item">
+								<img src="/assets/twitter.svg" alt="connect" />
+								<p>@mitran3333</p>
+							</div>
+						</div>
+						<!-- <div class="dept">Sathyabama university</div> -->
+						<div class="date">joined Dec 2021</div>
+					</div>
+				</div>
+				<div class="education_details">
+					<div class="_header">
+						<span><img src="/assets/hat.svg" alt="hat" /></span>
+						<p>Educational Details</p>
+					</div>
+					<div class="eduction_body">
+						<p>
+							<span><img src="/assets/book.png" alt="kk" /></span>B.E/B.Tech
+							- CSE
+						</p>
+						<p>
+							<span><img src="/assets/school.png" alt="kk" /></span>Sathyabama
+							university
+						</p>
+						<p>
+							<span><img src="/assets/calendar.png" alt="kk" /></span>Year of
+							passing : 2022
+						</p>
+						<p>
+							<span><img src="/assets/programming.png" alt="kk" /></span>Base programming language : Python
+						</p>
+					</div>
+				</div>
+				<!-- <div class="education_details">
+					<div class="_header">
+						<span><img src="/assets/hat.svg" alt="hat" /></span>
+						<p>Educational Details</p>
+					</div>
+					<div class="eduction_body">
+						<p>
+							<span><img src="/assets/practice.png" alt="kk" /></span>B.E/B.Tech
+							- CSE
+						</p>
+						<p>
+							<span><img src="/assets/practice.png" alt="kk" /></span>Sathyabama
+							university
+						</p>
+						<p>
+							<span><img src="/assets/practice.png" alt="kk" /></span>Year of
+							passing : 2022
+						</p>
+						<p>
+							<span><img src="/assets/practice.png" alt="kk" /></span>Year of
+							passing : 2022
+						</p>
+					</div>
+				</div> -->
+				<div class="work_details">
+					<div class="_header">
+						<span><img src="/assets/guy.svg" alt="guy" /></span>
+						<p>Work Experience</p>
+					</div>
+					<div class="work_details_body">
+						<p>No recent work experience</p>
+					</div>
+				</div>
+			</div>
+			 <div style="width:100%">
+				<!-- <div style="position:relative">
+			<div class="mob_user_profile">
+				<img src="assets/user-pic.png" class="mob_user_profile_img" width='30px'height='30px'>
+				<div>
+				<div class="name">avia mccroft</div>
+				<div class="tag">@avycroft</div></div>  
+
+			</div></div>-->
+			<div class="dash_board">
+				<div class="white_ban">
+					<div class="mob_user_profile">
+						<img src="assets/user-pic.png" class="mob_user_profile_img" width='30px'height='30px'>
+						<div>
+						<div class="name">avia mccroft</div>
+						<div class="tag">@avycroft
+							</div>
+						</div>
+					</div>
+					<div class="tabs_wrap">
+						
+						<!-- <ul class="mobile_view_elt">
+							<li
+								class="slidebtnLinks"
+								id="defaultslidebtnOpen"
+								onclick="slidebtn(event,'my_course_btn','in_progress','progress_1');mobileDropdown('My Courses')"
+							>
+								
+								Courses
+							</li>
+							<li
+								class="slidebtnLinks"
+								onclick="slidebtn(event,'my_projects_btn','project_progress','progress_3');mobileDropdown('My Projects')"
+							>
+								
+								Projects
+							</li>
+							<li
+								class="slidebtnLinks"
+								onclick="slidebtn(event,'my_careerpath_btn','career_progress','progress_4');mobileDropdown('My Feed')"
+							>
+								
+								Feed
+							</li>
+							<li
+								class="slidebtnLinks"
+								onclick="slidebtn(event,'my_internship_btn','internship_progress','progress_4');mobileDropdown('My Internship')"
+							>
+								
+								Internship
+							</li>
+							<li
+								class="slidebtnLinks"
+								onclick="slidebtn(event,'my_certificate_btn','certificate_progress','progress_4');mobileDropdown('My Certification')"
+							>
+								
+							Certification
+							</li>
+						</ul> -->
+						<ul class="lg-device-view">
+							<li
+								class="slidebtnLinks"
+								id="defaultslidebtnOpen"
+								onclick="slidebtn(event,'my_course_btn','in_progress','progress_1');mobileDropdown('My Courses')"
+							>
+								
+								Courses
+							</li>
+							<li
+								class="slidebtnLinks"
+								onclick="slidebtn(event,'my_projects_btn','project_progress','progress_3');mobileDropdown('My Projects')"
+							>
+								
+								Projects
+							</li>
+							<li
+								class="slidebtnLinks"
+								onclick="slidebtn(event,'my_careerpath_btn','career_progress','progress_4');mobileDropdown('My Feed')"
+							>
+								
+							Feed
+							</li>
+							<li
+								class="slidebtnLinks"
+								onclick="slidebtn(event,'my_internship_btn','internship_progress','progress_4');mobileDropdown('My Internship')"
+							>
+								
+								Internship
+							</li>
+							<li
+								class="slidebtnLinks"
+								onclick="slidebtn(event,'my_certificate_btn','certificate_progress','progress_4');mobileDropdown('My Certification')"
+							>
+								
+								Certification
+							</li>
+						</ul>
+					</div>
+				</div>
+				<script>
+					const mobUserProfile=document.querySelector('.mob_user_profile_img')
+					const ProfSection=document.querySelector('.profile_section')
+					const navBlur=document.querySelector('.Main_header')
+					const dashbBlur=document.querySelector('.dash_board')
+					mobUserProfile.addEventListener('click',function(){
+ProfSection.classList.toggle('hide_profile_sec')
+navBlur.classList.toggle('blur_her')
+dashbBlur.classList.toggle('blur_her')
+					})
+					document.querySelector('.close_x').addEventListener('click',function(){
+						ProfSection.classList.toggle('hide_profile_sec')
+						navBlur.classList.toggle('blur_her')
+						dashbBlur.classList.toggle('blur_her')
+					})
+				</script>
+				<!-- /---------------Mycourse---------------------- -->
+
+				<div
+					class="my_progress_button_detail_section slidebtnContent"
+					id="my_course_btn"
+				>
+					<div class="my_progess_header">
+						<h1
+							class="slideTabLinks progress_1"
+							id="defaultslideTabOpen"
+							onclick="slideTab('progress_1','in_progress')"
+						>
+							In progess
+						</h1>
+						<h1
+							class="slideTabLinks completed_1"
+							onclick="slideTab('completed_1','completed')"
+						>
+							Completed
+						</h1>
+					</div>
+					<div
+						class="my_progess_first_cards_holder slideTabContent"
+						id="in_progress"
+					>
+						<div class="course_popular_card_section">
+							<div class="popular_card_section">
+								<div class="course_card project_card">
+									<div class="image">
+										<img src="/assets/card_banner.svg" alt="card" />
+									</div>
+									<div class="course_body">
+										<div class="title">
+											<span>Tutorial</span>
+											<p>Introduction to Python</p>
+										</div>
+
+										<div class="par">
+											<p>
+												Master the basics of data analysis in Python. Expand
+												your skillset by learning scientific computing with
+												numpy. Master the basics of data analysis in Python.
+											</p>
+										</div>
+										<div class="icons">
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+										</div>
+										<div class="author_tag">
+											<p>Author:</p>
+											<div class="name">
+												<span>
+													<img src="/assets/coin.svg" alt="indian"
+												/></span>
+												<h3>Alan Biju</h3>
+											</div>
+										</div>
+										<div class="card_tags">
+											<p>Prerequistes :</p>
+											<div class="tags_box">
+												<div class="tags">
+													<p>React</p>
+												</div>
+												<div class="tags">
+													<p>Kodo</p>
+												</div>
+											</div>
+										</div>
+										<div class="progress_streak">
+											<div class="progress_bar">
+												<div class="bar" style="width: 60%"></div>
+											</div>
+											<span>60%</span>
+										</div>
+										<button>View in Detail</button>
+									</div>
+								</div>
+
+								<div class="course_card project_card">
+									<div class="image">
+										<img src="/assets/card_banner.svg" alt="card" />
+									</div>
+									<div class="course_body">
+										<div class="title">
+											<span>Tutorial</span>
+											<p>Introduction to Python</p>
+										</div>
+
+										<div class="par">
+											<p>
+												Master the basics of data analysis in Python. Expand
+												your skillset by learning scientific computing with
+												numpy. Master the basics of data analysis in Python.
+											</p>
+										</div>
+										<div class="icons">
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+										</div>
+										<div class="author_tag">
+											<p>Author:</p>
+											<div class="name">
+												<span>
+													<img src="/assets/coin.svg" alt="indian"
+												/></span>
+												<h3>Alan Biju</h3>
+											</div>
+										</div>
+										<div class="card_tags">
+											<p>Prerequistes :</p>
+											<div class="tags_box">
+												<div class="tags">
+													<p>React</p>
+												</div>
+												<div class="tags">
+													<p>Kodo</p>
+												</div>
+											</div>
+										</div>
+										<div class="progress_streak">
+											<div class="progress_bar">
+												<div class="bar" style="width: 60%"></div>
+											</div>
+											<span>60%</span>
+										</div>
+										<button>View in Detail</button>
+									</div>
+								</div>
+								<div class="course_card project_card">
+									<div class="image">
+										<img src="/assets/card_banner.svg" alt="card" />
+									</div>
+									<div class="course_body">
+										<div class="title">
+											<span>Tutorial</span>
+											<p>Introduction to Python</p>
+										</div>
+
+										<div class="par">
+											<p>
+												Master the basics of data analysis in Python. Expand
+												your skillset by learning scientific computing with
+												numpy. Master the basics of data analysis in Python.
+											</p>
+										</div>
+										<div class="icons">
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+										</div>
+										<div class="author_tag">
+											<p>Author:</p>
+											<div class="name">
+												<span>
+													<img src="/assets/coin.svg" alt="indian"
+												/></span>
+												<h3>Alan Biju</h3>
+											</div>
+										</div>
+										<div class="card_tags">
+											<p>Prerequistes :</p>
+											<div class="tags_box">
+												<div class="tags">
+													<p>React</p>
+												</div>
+												<div class="tags">
+													<p>Kodo</p>
+												</div>
+											</div>
+										</div>
+										<div class="progress_streak">
+											<div class="progress_bar">
+												<div class="bar" style="width: 60%"></div>
+											</div>
+											<span>60%</span>
+										</div>
+										<button>View in Detail</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="my_progess_first_cards_holder slideTabContent nocontent"
+						id="completed"
+					>
+						<h6 style="margin-left:auto;margin-right:auto">No Completed Projects</h6>
+					</div>
+				</div>
+				<!-- -----------------------------my project-------------------------------------- -->
+				<div
+					class="my_progress_button_detail_section slidebtnContent"
+					id="my_projects_btn"
+				>
+					<div class="my_progess_header">
+						<h1
+							class="slideTabLinks progress_3"
+							id="defaultslideTabOpen"
+							onclick="slideTab('progress_3','project_progress')"
+						>
+							In progess
+						</h1>
+						<h1
+							class="slideTabLinks completed_3"
+							onclick="slideTab('completed_3','completed_3')"
+						>
+							Completed
+						</h1>
+					</div>
+					<div
+						class="my_progess_first_cards_holder slideTabContent"
+						id="project_progress"
+					>
+						<div class="course_popular_card_section">
+							<div class="popular_card_section">
+								<div class="course_card project_card">
+									<div class="image">
+										<img src="/assets/card_banner.svg" alt="card" />
+									</div>
+									<div class="course_body">
+										<div class="title">
+											<span>Tutorial</span>
+											<p>Introduction to Python</p>
+										</div>
+
+										<div class="par">
+											<p>
+												Master the basics of data analysis in Python. Expand
+												your skillset by learning scientific computing with
+												numpy. Master the basics of data analysis in Python.
+											</p>
+										</div>
+										<div class="icons">
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+										</div>
+										<div class="author_tag">
+											<p>Author:</p>
+											<div class="name">
+												<span>
+													<img src="/assets/coin.svg" alt="indian"
+												/></span>
+												<h3>Alan Biju</h3>
+											</div>
+										</div>
+										<div class="card_tags">
+											<p>Prerequistes :</p>
+											<div class="tags_box">
+												<div class="tags">
+													<p>React</p>
+												</div>
+												<div class="tags">
+													<p>Kodo</p>
+												</div>
+											</div>
+										</div>
+										<div class="progress_streak">
+											<div class="progress_bar">
+												<div class="bar" style="width: 60%"></div>
+											</div>
+											<span>60%</span>
+										</div>
+										<button>View in Detail</button>
+									</div>
+								</div>
+
+								<div class="course_card project_card">
+									<div class="image">
+										<img src="/assets/card_banner.svg" alt="card" />
+									</div>
+									<div class="course_body">
+										<div class="title">
+											<span>Tutorial</span>
+											<p>Introduction to Python</p>
+										</div>
+
+										<div class="par">
+											<p>
+												Master the basics of data analysis in Python. Expand
+												your skillset by learning scientific computing with
+												numpy. Master the basics of data analysis in Python.
+											</p>
+										</div>
+										<div class="icons">
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+										</div>
+										<div class="author_tag">
+											<p>Author:</p>
+											<div class="name">
+												<span>
+													<img src="/assets/coin.svg" alt="indian"
+												/></span>
+												<h3>Alan Biju</h3>
+											</div>
+										</div>
+										<div class="card_tags">
+											<p>Prerequistes :</p>
+											<div class="tags_box">
+												<div class="tags">
+													<p>React</p>
+												</div>
+												<div class="tags">
+													<p>Kodo</p>
+												</div>
+											</div>
+										</div>
+										<div class="progress_streak">
+											<div class="progress_bar">
+												<div class="bar" style="width: 60%"></div>
+											</div>
+											<span>60%</span>
+										</div>
+										<button>View in Detail</button>
+									</div>
+								</div>
+								<div class="course_card project_card">
+									<div class="image">
+										<img src="/assets/card_banner.svg" alt="card" />
+									</div>
+									<div class="course_body">
+										<div class="title">
+											<span>Tutorial</span>
+											<p>Introduction to Python</p>
+										</div>
+
+										<div class="par">
+											<p>
+												Master the basics of data analysis in Python. Expand
+												your skillset by learning scientific computing with
+												numpy. Master the basics of data analysis in Python.
+											</p>
+										</div>
+										<div class="icons">
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+											<div class="icon_item">
+												<span
+													><img src="/assets/card_time.svg" alt="time"
+												/></span>
+												<p>16 hours</p>
+											</div>
+										</div>
+										<div class="author_tag">
+											<p>Author:</p>
+											<div class="name">
+												<span>
+													<img src="/assets/coin.svg" alt="indian"
+												/></span>
+												<h3>Alan Biju</h3>
+											</div>
+										</div>
+										<div class="card_tags">
+											<p>Prerequistes :</p>
+											<div class="tags_box">
+												<div class="tags">
+													<p>React</p>
+												</div>
+												<div class="tags">
+													<p>Kodo</p>
+												</div>
+											</div>
+										</div>
+										<div class="progress_streak">
+											<div class="progress_bar">
+												<div class="bar" style="width: 60%"></div>
+											</div>
+											<span>60%</span>
+										</div>
+										<button>View in Detail</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="my_progess_first_cards_holder slideTabContent nocontent"
+						id="completed_3"
+					>
+						<h6 style="margin-left:auto;margin-right:auto">No Completed Projects</h6>
+					</div>
+				</div>
+
+				<!-- -------------------------------My feed-------------------------------- -->
+				<div
+					class="my_progress_button_detail_section slidebtnContent"
+					id="my_careerpath_btn"
+				>
+					<div
+						class="my_progess_first_cards_holder slideTabContent feed_section"
+						id="career_progress"
+					>
+						<div class="feed_container">
+							<div class="title">
+								<h1>Feed section</h1>
+								<p>
+									A community of passionate Artificial Intelligence and Machine
+									Learning enthusiasts.
+								</p>
+							</div>
+							<!-- <div class="feed_input_conatiner">
+						<div class="profile">
+							<img src="/assets/profile.png" alt="profile" />
+						</div>
+						<div class="feed_input_box">
+							<div class="feed_title">
+								<span>posting to </span>
+								<div class="title_name">
+									<p>Fornted End develpment</p>
+								</div>
+								<div class="add_tags">
+									<div class="tag-disp" id="skillsTags"></div>
+									<div data-title="Skill's" class="form-item">
+										<input
+											class="form-textinput"
+											id="skills"
+											style="width: 100%"
+											placeholder="Tags"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="feed_textarea">
+								<textarea name="feed"></textarea>
+							</div>
+							<div class="post_feed">
+								<div class="icons">
+									<img
+										src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-file-advertising-kiranshastry-lineal-kiranshastry-1.png"
+									/>
+									<img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACy0lEQVRoge3ZTYhWVRzH8c88jvYCjZr0soiwUCeFUnxBaxVCWIuhGAdECVqFtFRsEy2qjagMCIItFAVXWhYViKBtIghKsHTdNCqiuSvJHKFGF+c+PU/TOPfec+4zd4aeLxy45z7n/u/vd+55zitdunT5X9DTdr0AOzCAp9Bbi6J8/sJVfIX9+K39xyUYxd1ZlkYz7XqEmj+P5zGO4/geYynV1kEexAZsQQMXsAZe13K4rS51EbyppXsA9maZkRpFxTIiaN/TwMLs5mh9eqJpan600Xbzbh1KEvlHc5kudg62Ygj9WX4EX+Io7lQoMIpDgrOzU5RZjB/dvxv8Bas6K3NSzmbvP9TIK4kn8a2phT6Db/BcurY4ihg5KIz0efThmH/PFqaNPCPL8EaJeOvwcrycePKMvKJ8DW+K1JJEnpEiTWoiT8cISSXPyJ8RMW/FCEklz8hPETEvxghJJc/I17hRIt4YPouXE0+ekdt4r0S8fbgWLyeeIuPIEQwXKPcJPkyTU5q5zYuic61dOIfdwijezg18hI+Vn3guxAtYjqV4HI9hkVa3/wdu4nfha1/Clazc+rJG4AQ+xVphKtIQ5ljfCevoIvTgRQxiI1Yq1ipyKbvBMI4fslSG+XgHb+PZks8WotM7JQ/hXewUzHSMThp5VZhwTvxPdYRK2ucEevEBTpkmE82XVsnDOInXKo6bS5VG+nAaL1UYszBVNa25woBYiwmqM3JATeuQJlUYGcT2CuIkkWrkCRyuQkgqqUZ2a+1U1kqKkdV4qyohqaQYeT/x+UqJFdIvHEfMGBpaa4gyg+N2M+hrYLyBX7PMCsXM9Jp5B0LXCaNxczN6WNhln4oh5c/6Op02NJeTX2i1+Z+FLZ2/JzExT1jZPZJjdjr5HJubmT5h2l13zZZNpzLt/9nX3SQcLC7GA/GV1FHGcFk4Zz9Ts5YuXWYN9wC0W+pZQa5oOAAAAABJRU5ErkJggg=="
+									/>
+								</div>
+								<button>Post</button>
+							</div>
+						</div>
+					</div> -->
+							<!-- //-------------------------------------------------- -->
+							<div class="post_section">
+								<div class="post_box">
+									<div class="avater_section">
+										<div class="profile">
+											<img src="/assets/profile.png" alt="profile" />
+											<div class="name">
+												<p>Alan Biju</p>
+												<span>TechSnap DevOps</span>
+											</div>
+										</div>
+									</div>
+									<div class="para">
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit.
+											Corrupti reprehenderit minima dolorem deleniti consequatur
+											quas, alias quis. Quam quo harum inventore, hic rerum ab.
+											Laudantium numquam inventore iste provident labore!
+										</p>
+									</div>
+									<div class="photo">
+										<img src="/assets/banner.png" alt="banner" />
+									</div>
+									<div class="post_tages">
+										<div class="tags_box">
+											<div class="tags">React Js</div>
+											<div class="tags">React Js</div>
+										</div>
+										<div class="time">
+											<p>posted 3 Jan</p>
+										</div>
+									</div>
+									<div class="post_icons">
+										<img
+											src="https://img.icons8.com/ios/50/000000/like--v1.png"
+										/>
+										<img
+											src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-comment-chat-flatart-icons-outline-flatarticons-2.png"
+										/>
+									</div>
+								</div>
+								<div class="post_box">
+									<div class="avater_section">
+										<div class="profile">
+											<img src="/assets/profile.png" alt="profile" />
+											<div class="name">
+												<p>Alan Biju</p>
+												<span>TechSnap DevOps</span>
+											</div>
+										</div>
+									</div>
+									<div class="para">
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit.
+											Corrupti reprehenderit minima dolorem deleniti consequatur
+											quas, alias quis. Quam quo harum inventore, hic rerum ab.
+											Laudantium numquam inventore iste provident labore!
+										</p>
+									</div>
+									<div class="photo">
+										<img src="/assets/banner.png" alt="banner" />
+									</div>
+									<div class="post_tages">
+										<div class="tags_box">
+											<div class="tags">React Js</div>
+											<div class="tags">React Js</div>
+										</div>
+										<div class="time">
+											<p>posted 3 Jan</p>
+										</div>
+									</div>
+									<div class="post_icons">
+										<img
+											src="https://img.icons8.com/ios/50/000000/like--v1.png"
+										/>
+										<img
+											src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-comment-chat-flatart-icons-outline-flatarticons-2.png"
+										/>
+									</div>
+								</div>
+								<div class="post_box">
+									<div class="avater_section">
+										<div class="profile">
+											<img src="/assets/profile.png" alt="profile" />
+											<div class="name">
+												<p>Alan Biju</p>
+												<span>TechSnap DevOps</span>
+											</div>
+										</div>
+									</div>
+									<div class="para">
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit.
+											Corrupti reprehenderit minima dolorem deleniti consequatur
+											quas, alias quis. Quam quo harum inventore, hic rerum ab.
+											Laudantium numquam inventore iste provident labore!
+										</p>
+									</div>
+									<div class="photo">
+										<img src="/assets/profile.jpg" alt="banner" />
+									</div>
+									<div class="post_tages">
+										<div class="tags_box">
+											<div class="tags">React Js</div>
+											<div class="tags">React Js</div>
+										</div>
+										<div class="time">
+											<p>posted 3 Jan</p>
+										</div>
+									</div>
+									<div class="post_icons">
+										<img
+											src="https://img.icons8.com/ios/50/000000/like--v1.png"
+										/>
+										<img
+											src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-comment-chat-flatart-icons-outline-flatarticons-2.png"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- -------------------------------------my internship---------------------------------------- -->
+
+				<div
+					class="my_progress_button_detail_section slidebtnContent"
+					id="my_internship_btn"
+				>
+					<div class="my_progess_header">
+						<h1
+							class="slideTabLinks progress_4"
+							id="defaultslideTabOpen"
+							onclick="slideTab('progress_4','internship_progress')"
+						>
+							In progess
+						</h1>
+						<h1
+							class="slideTabLinks completed_4"
+							onclick="slideTab('completed_4','internship_completed')"
+						>
+							Completed
+						</h1>
+					</div>
+
+					<div
+						class="my_progess_first_cards_holder slideTabContent"
+						id="internship_progress"
+					></div>
+					<div
+						class="my_progess_first_cards_holder slideTabContent nocontent"
+						id="internship_completed"
+					>
+					<h6 style="margin-left:auto;margin-right:auto">No Completed Projects</h6>
+					</div>
+				</div>
+				<!-- ----------------------------------------my cerfi--------------------------- -->
+				<div
+					class="my_progress_button_detail_section slidebtnContent"
+					id="my_certificate_btn"
+				>
+					<div
+						class="my_progess_first_cards_holder slideTabContent"
+						id="certificate_progress"
+					>
+					<div class="certif-sec">
+						<div class="my_progess_trending_card certificate_card">
+							<div class="trending_card_banner">
+								<img src="assets/banner.png" alt="banner" />
+							</div>
+							<div class="my_progess_trending_card_body">
+								<h1>Introduction to SQL</h1>
+								<div class="my_progess_trending_card_options_holder">
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/time.svg" alt="time" />
+										<p>15 hours</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/lessons.svg" alt="time" />
+										<p>9 lessons</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/coin.svg" alt="time" />
+										<p>779 coins</p>
+									</div>
+								</div>
+							</div>
+							<div class="trending_card_author">
+								<p class="pink">Project Manager :</p>
+								<p>Akhil Sv</p>
+							</div>
+
+							<div class="my_progress_trending_card_footer">
+								<button>View in details</button>
+							</div>
+						</div>
+						<div class="my_progess_trending_card certificate_card">
+							<div class="trending_card_banner">
+								<img src="assets/banner.png" alt="banner" />
+							</div>
+							<div class="my_progess_trending_card_body">
+								<h1>Introduction to SQL</h1>
+								<div class="my_progess_trending_card_options_holder">
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/time.svg" alt="time" />
+										<p>15 hours</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/lessons.svg" alt="time" />
+										<p>9 lessons</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/coin.svg" alt="time" />
+										<p>779 coins</p>
+									</div>
+								</div>
+							</div>
+							<div class="trending_card_author">
+								<p class="pink">Project Manager :</p>
+								<p>Akhil Sv</p>
+							</div>
+
+							<div class="my_progress_trending_card_footer">
+								<button>View in details</button>
+							</div>
+						</div>
+						<div class="my_progess_trending_card certificate_card">
+							<div class="trending_card_banner">
+								<img src="assets/banner.png" alt="banner" />
+							</div>
+							<div class="my_progess_trending_card_body">
+								<h1>Introduction to SQL</h1>
+								<div class="my_progess_trending_card_options_holder">
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/time.svg" alt="time" />
+										<p>15 hours</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/lessons.svg" alt="time" />
+										<p>9 lessons</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/coin.svg" alt="time" />
+										<p>779 coins</p>
+									</div>
+								</div>
+							</div>
+							<div class="trending_card_author">
+								<p class="pink">Project Manager :</p>
+								<p>Akhil Sv</p>
+							</div>
+
+							<div class="my_progress_trending_card_footer">
+								<button>View in details</button>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+
+				<!-- ---------------------------------------------------------------------- -->
+			</div>
+			</div>
+		</div>
+ 
+		<script>
+			function slidebtn(evt, cityName, defaultTabClass, evts) {
+				let i, tabcontent, tablinks;
+				slideTab(evts, defaultTabClass);
+				tabcontent = document.getElementsByClassName('slidebtnContent');
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = 'none';
+				}
+				tablinks = document.getElementsByClassName('slidebtnLinks');
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(
+						'activebtn',
+						'',
+					);
+				}
+				document.getElementById(cityName).style.display = 'flex';
+				evt.currentTarget.className += ' activebtn';
+			}
+			const tabs = document.querySelectorAll('[data-tab-target]');
+			const tabContents = document.querySelectorAll('[data-tab-content]');
+			tabs.forEach((tab) => {
+				tab.addEventListener('click', () => {
+					const target = document.querySelector(tab.dataset.tabTarget);
+					tabContents.forEach((tabContent) => {
+						console.log(tabContent);
+						tabContent.classList.remove('active');
+					});
+					tabs.forEach((tab) => {
+						tab.classList.remove('active');
+					});
+					tab.classList.add('active');
+					target.classList.add('active');
+				});
+			});
+			document.getElementById('defaultslidebtnOpen').click();
+
+			function slideTab(evt, cityName) {
+				let i, tabcontent, tablinks;
+
+				tabcontent = document.getElementsByClassName('slideTabContent');
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = 'none';
+				}
+				tablinks = document.getElementsByClassName('slideTabLinks');
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(
+						'activeSlide',
+						'',
+					);
+				}
+				document.getElementById(cityName).style.display = 'flex';
+				console.log(evt);
+
+				const event = document.getElementsByClassName(evt)[0];
+				event.classList.add('activeSlide');
+			}
+		</script>
+
+		<script>
+			const header = document.querySelector('.header');
+			const navLink = document.querySelectorAll('.nav_item');
+			const ham = document.querySelector('.ham');
+
+			window.addEventListener('scroll', () => {
+				const top = window.innerHeight * (15 / 100);
+				if (window.scrollY <= top) {
+					header.style.background = 'rgb(26, 25, 29)';
+					ham.style.background = 'transparent';
+
+					header.style.height = '60px';
+					navLink.forEach((i) => {
+						i.style.color = '#fff';
+					});
+				}
+				if (window.scrollY > top) {
+					header.style.background = '#fff';
+					ham.style.background = '#0a33ec';
+					header.style.height = '60px';
+					navLink.forEach((i) => {
+						i.style.color = '#000';
+					});
+				}
+			});
+		</script>
+		<script>
+			//----------------------------
+
+			const Close = document.querySelector('.Close');
+			const DropMenu = document.querySelector('.dropMenu');
+			ham.addEventListener('click', () => {
+				DropMenu.classList.add('MenuAnimation');
+				console.log('sdsd');
+			});
+			Close.addEventListener('click', () => {
+				DropMenu.classList.remove('MenuAnimation');
+			});
+			//------------------------------------
+			const Profile = document.querySelector('.avatar');
+			const Profile_dropDown = document.querySelector('.profile_dropDown');
+			Profile.addEventListener('click', () => {
+				console.log('dsds');
+				if (Profile_dropDown.style.opacity === '1') {
+					Profile_dropDown.style.opacity = '0';
+					Profile_dropDown.style.pointerEvents = 'none';
+				} else {
+					Profile_dropDown.style.opacity = '1';
+					Profile_dropDown.style.pointerEvents = 'all';
+				}
+			});
+			document.addEventListener('click', function (event) {
+				var isClickInsideElement = Profile.contains(event.target);
+				if (!isClickInsideElement) {
+					Profile_dropDown.style.opacity = '0';
+				}
+			});
+			//------------------------------------
+
+			const displaySideMenu = () => {
+				const profileSection = document.querySelector('.profile_section');
+				if (profileSection.style.left === '0px') {
+					profileSection.style.left = '-100%';
+				} else {
+					profileSection.style.left = '0px';
+				}
+			};
+
+			//------------------------------
+			const tabs_wrap = document.querySelector('.tabs_wrap ul');
+			const he = document.querySelector('.mobile_view h1');
+			const hes = document.querySelector('.mobile_view span');
+			const mobileDropdown = (text) => {
+				var x = window.matchMedia('(max-width: 700px)');
+				if (text != '') {
+					he.innerHTML = text;
+				}
+				if (x.matches) {
+					if (tabs_wrap.style.display === 'flex') {
+						tabs_wrap.style.display = 'none';
+						hes.innerHTML = '˅';
+					} else {
+						tabs_wrap.style.display = 'flex';
+						hes.innerHTML = '^';
+					}
+				}
+			};
+
+			//-----------------------------
+		</script>
+		<!-- ----------------------------------------------------------------------- -->
+	</body>
+</html>

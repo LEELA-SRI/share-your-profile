@@ -1,0 +1,93 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+}
+body {
+	background-color: #fff;
+	display: grid;
+	place-items: center;
+}
+header {
+	width: 100%;
+	display: grid;
+	place-items: center;
+	.sub_header {
+		max-width: 1400px;
+		width: 100%;
+		height: 50px;
+		background-color: inherit;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 10px;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	
+		.menu {
+			width: 600px;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.menu_item {
+				display: flex;
+				align-items: center;
+				span {
+					font-size: 0.6rem;
+					margin-left: 10px;
+					display: grid;
+					place-items: center;
+				}
+			}
+		}
+		.sub_header_buttons {
+			button {
+				width: 90px;
+				height: 30px;
+				outline: none;
+				border-radius: 6px;
+				font-weight: 600;
+			}
+			#login {
+				border: 1px solid #fd03d4;
+				background-color: #fd03d4;
+				color: #fff;
+			}
+			#sign {
+				border: 1px solid #fd03d4;
+				color: #fd03d4;
+			}
+		}
+	}
+}
+.mobile_profile-icon {
+	margin-left: 10px;
+	background-color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: grid;
+	place-content: center;
+	overflow: hidden;
+	visibility: hidden;
+	@media(max-width:900px){
+		visibility: visible;
+	}
+	img {
+		width: 30px;
+		height: 30px;
+	}
+}
+	.logoheadericon {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			width: 220px;
+			height: 100%;
+			cursor: pointer;
+			img {
+				object-fit: contain;
+				
+			}
+		}
