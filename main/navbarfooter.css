@@ -456,7 +456,7 @@ body{
 
   /* Start of Mobile Nav Bar */
   .mob-nav {
-    width: 100vw;
+    /* width: 100vw; */
     height: 60px;
     background: #1a191d;
     position: fixed;

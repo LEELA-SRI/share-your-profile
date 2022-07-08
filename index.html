@@ -1725,7 +1725,8 @@ document.querySelector('body').style.overflowY='hidden'
 						ProfSection.classList.toggle('hide_profile_sec')
 						navBlur.classList.toggle('blur_her')
 						dashbBlur.classList.toggle('blur_her')
-						right_frag.style.overflowY='auto'
+						
+						document.querySelector('body').style.overflowY='auto'
 					})
 				</script>
 				<!-- /---------------Mycourse---------------------- -->
@@ -2672,93 +2673,6 @@ document.querySelector('body').style.overflowY='hidden'
 			//-----------------------------
 		</script>
 		<!-- ----------------------------------------------------------------------- -->
-		<div class="footer_MainBox">
-			<div class="Footer_page">
-			  <footer class="Footer_conatiner">
-				<div class="Footer_header">
-				  <img src="main/logo.png" alt="Logo" />
-				  <br /><br />
-				  <p>We are here to endure your muddled stages of knowing the trends while pursuing UG-CSE.</br>we help you to
-					know about trending jobs and required skills for achieving one particular designation</p>
-				  <br>
-				  <p>We will succour you in submitting your university projects as well as steer you with free tutorials,
-					online courses, live courses and career paths</p>
-				</div>
-				<div class="Footer_columns_holder">
-				  <div class="Footer_columns">
-					<h1>Company</h1>
-					<a href="{% url 'aboutus' %}">About us</a>
-					<a href="{% url 'learnerstories' %}">Learner stories</a>
-					<a href="{% url 'boardmembers' %}">our people</a>
-					<a href="{% url 'job_test:jobslist' %}">jobs</a>
-				  </div>
-				  <div class="Footer_columns">
-					<h1>Resources</h1>
-					<a href="##">Tutorials</a>
-					<a href="{% url 'careerpath' %}">Career paths</a>
-					<a href="##">Courses</a>
-					<a href="##">Blogs</a>
-				  </div>
-				  <div class="Footer_columns">
-					<h1>Support</h1>
-					<a href="{% url 'contact' %}">Contact us</a>
-					<a href="##">FAQ</a>
-					<a href="{% url 'any_bugs' %}">Any ideas/Bugs</a>
-					<a href="{% url 'invest' %}">Get Involved</a>
-				  </div>
-				  <div class="Footer_columns">
-					<h1>Services</h1>
-					<a href="##">Startup services</a>
-					<a href="##">Design services</a>
-					<a href="##">Mini Projects</a>
-					<a href="##">Mock interviews</a>
-				  </div>
-				</div>
-				<div class="join_our desktop">
-				  <p>Join our newsletter</p>
-				  <form class="input_holder" method="POST" action="{% url 'nextpage' %}">
-					 {% csrf_token %}
-					<input type="text" name="email" />
-					<button type="submit">Subscribe</button>
-				  </form>
-				</div>
-			  </footer>
-			  <div class="join_our responsive">
-				<p>Join our newsletter</p>
-				<form class="input_holder" method="POST" action="{% url 'nextpage' %}">
-				   {% csrf_token %} 
-				  <input type="text" name="email" />
-				  <button type="submit">Subscribe</button>
-				</form>
-			  </div>
-			  <div class="Privacy_holder">
-				<div class="Privacy_links">
-				  <a href="{% url 'privacy' %}">Privacy policy</a>
-				  <a href="{% url 'cookies' %}">Cookies Notice</a>
-				  <a href="{% url 'security' %}">Security</a>
-				  <a href="{% url 'terms' %}">Terms of use</a>
-				</div>
-				<div class="Social-media">
-				  <div class="image_conatiner">
-					<a href="https://www.linkedin.com/company/74741373/"><img
-						src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png"
-						id="link" /></a>
-	  
-					<a href="{% url 'contact' %}"><img
-						src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
-						id="link" /></a>
-	  
-					<a href="https://trello.com/b/SMDt9NMY/techsnap-upcoming-releases"><img
-						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC-APsSZXqFUpTTg9qvGW6D5hERazjQfAMkM0Oz6b9sC3uIwU4-_fD8CatVhbAUG4hz3g&usqp=CAU"
-						id="link" /></a>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			<div class="copyRight">
-			  Made with 💗 in india © 2021 Techsnap Educations LLP. All Rights
-			  Reserved.
-			</div>
-		  </div>
+		
 	</body>
 </html>
