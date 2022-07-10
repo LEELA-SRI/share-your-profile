@@ -12,7 +12,7 @@
   width: 350px;
   height: calc(100vh - 60px);
   height:fit-content;
-  padding: 15px;
+  padding: 0 15px 15px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,6 +24,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background: rgb(244,244,244);
+  overflow-x: hidden;
   overflow-y: auto;
 position: sticky;
 top:60px
@@ -163,6 +164,7 @@ top:60px
   width: 100%;
   /* height: 320px; */
   background-color: inherit;
+  margin: 15px;
   margin-bottom: 25px;
 }
 
@@ -407,7 +409,7 @@ top:60px
 }
 .lg-device-view{
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 /* @media (max-width: 700px) { }*/
   /* .tabs_wrap ul.lg-device-view span{
@@ -424,7 +426,7 @@ top:60px
           @media (min-width: 499px){
             .tabs_wrap ul.lg-device-view li{
               width:fit-content;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding:13px;
     display: flex;
     align-items: flex-start;
@@ -440,9 +442,21 @@ top:60px
         align-items: center; */
       }}
 
+@media (min-width: 1023px){
+  .lg-device-view{
+    justify-content: flex-start;
+    gap:5%
+  }
+  .profile_section{
+    top:75px
+  }
+  .right_frag{
+    width:100%
+  }
+}
 @media (min-width: 821px){
   .lg-device-view{
-    width:calc(100vw - 320px) !important;
+    width:calc(100vw - 310px) !important;
     padding-top:10px
   }
 }
@@ -636,7 +650,7 @@ top:60px
     max-width:1200px
   }
 }
-@media (min-width:900px){
+@media (min-width:821px){
   .mob_user_profile{
     display:none
   }
@@ -926,7 +940,7 @@ top:60px
 }
 
 .course_card {
-  min-width: 250px;
+  /* min-width: 250px; */
   /* width: 31%; */
   min-height: 400px;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
